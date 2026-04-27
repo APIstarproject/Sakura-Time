@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: sakura-mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - sakura-network
+
+  backend:
+    build: .
+    container_name: sakura-backend
+    environment:
+      NODE_ENV: production
+      MONGODB_URI: mongodb://root:password@mongodb:27017/sakura?authSource=admin
+      PORT: 3000
+      JWT_SECRET: your-secret-key-here-change-in-production
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+    networks:
+      - sakura-network
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    container_name: sakura-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - backend
+    networks:
+      - sakura-network
+
+volumes:
+  mongo-data:
+
+networks:
+  sakura-network:
+    driver: bridge
