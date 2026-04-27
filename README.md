@@ -270,7 +270,8 @@ MIT License © 2024 Sakura Time Project
 
 <div align="center">
 
-**[🌸 访问网站](https://sakuratime.com)** • **[⭐ 给个 Star](https://github.com/kemomi/SakuraTime)** • **[🐦 关注我们](https://twitter.com/sakuratime)**
+**[🌸 访问网站](https://sakuratime.com)** • **[⭐ 给个 Star](https://github.com/kemomi/SakuraTime)** • **[🐦 关注我们](https://twitter.com/Misita_18x
+)**
 
 Made with ❤️ by the Sakura Time Team
 
