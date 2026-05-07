@@ -1,20 +1,21 @@
-# 🌸 樱花时刻 (Sakura Time)
+# 🌸 樱花时刻 (Sakura Time) 中国大陆版
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Node](https://img.shields.io/badge/node-18%2B-brightgreen.svg)
 ![React](https://img.shields.io/badge/react-18-blue.svg)
-
 > 一个基于 React 和 Node.js 的**智能樱花开放预测系统**，提供实时樱花开放状态和准确的预测信息。
 
-[English](./README_EN.md) | 中文
+[English](./README_EN.md) | [中文](./README_CN.md) | [日本语](./README_JP.md)
+##  **智能樱花开放预测系统**
+提供实时樱花开放状态和准确的预测信息 [❀点击访问❀](https://kemomi.github.io/Sakura-Time)
 
 ## 📱 演示
 
 ```
 🌸 主要功能：
-├─ 🗺️  实时樱花位置地图 - 全日本覆盖
-├─ 📊 AI开花预测 - 准确度高达95%
+├─ 🗺️  实时樱花位置地图 - 全中国覆盖
+├─ 📊 AI开花预测 - 准确度高达75%
 ├─ 🌡️  天气数据集成 - 实时气象信息
 ├─ 👤 用户系统 - 收藏和通知管理
 └─ 📱 响应式设计 - 完美适配所有设备
@@ -23,7 +24,7 @@
 ## ✨ 核心特性
 
 ### 🎯 智能预测引擎
-- **多维度数据集成**：整合过去1200年的开花记录、气象数据和卫星遥感数据
+- **多维度数据集成**：整合过去500年的开花记录、气象数据和卫星遥感数据
 - **AI算法支持**：支持多种机器学习算法，预测准确率 85-95%
 - **实时更新**：每日自动更新预测数据
 - **置信度显示**：清晰展示预测的可信度
@@ -81,8 +82,10 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/kemomi/SakuraTime.git
+git clone https://github.com/kemomi/Sakura-Time.git
 cd SakuraTime
+
+# 点击index.html 无后端启动
 
 # 启动所有服务
 docker-compose up -d
@@ -98,7 +101,7 @@ docker-compose exec backend npm run seed
 
 ```bash
 # 克隆项目
-git clone https://github.com/kemomi/SakuraTime.git
+git clone https://github.com/kemomi/Sakura-Time.git
 cd SakuraTime
 
 # 后端设置
@@ -249,8 +252,8 @@ MIT License © 2024 Sakura Time Project
 
 - 📖 [项目结构文档](./PROJECT_STRUCTURE.md)
 - 🚀 [快速开始指南](./QUICKSTART.md)
-- 🐛 [提交 Issue](https://github.com/kemomi/SakuraTime/issues)
-- 💬 [讨论区](https://github.com/kemomi/SakuraTime/discussions)
+- 🐛 [提交 Issue](https://github.com/kemomi/Sakura-Time/issues)
+- 💬 [讨论区](https://github.com/kemomi/Sakura-Time/discussions)
 
 ## 🗺️ 路线图
 
@@ -270,7 +273,7 @@ MIT License © 2024 Sakura Time Project
 
 <div align="center">
 
-**[🌸 访问网站](https://sakuratime.com)** • **[⭐ 给个 Star](https://github.com/kemomi/SakuraTime)** • **[🐦 关注我们](https://twitter.com/Misita_18x
+**[🌸 访问网站](https://kemomi.github.io/Sakura-Time)** • **[⭐ 给个 Star](https://github.com/kemomi/Sakura-Time)** • **[🐦 关注我们](https://twitter.com/Misita_18x
 )**
 
 Made with ❤️ by the Sakura Time Team
